@@ -5,8 +5,22 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-   <bean id="helloWorld" class="com.tutorialpoint.HelloWorld">
+  <!-- Hello World  -->
+  <!--<bean id="helloWorld" class="com.tutorialpoint.HelloWorld">
        <property name="message" value="Hello, The World is Mine!"/>
-   </bean>
+   </bean> -->
+   
+   <!-- Hello world singleton -->
+ <!--  <bean id="helloWorld" class="com.tutorialpoint.HelloWorld" scope = "singleton">
+       <property name="message" value="Hello, The World is Mine!"/>
+   </bean> -->
+
+<!-- hello world prototype -->
+	   <bean id="helloWorld" class="com.tutorialpoint.HelloWorld" scope = "prototype">
+       <property name="message" value="Hello, The World is Mine prototype !"/>
+	  </bean>
+
+
+
 
 </beans>
