@@ -16,10 +16,15 @@
    </bean> -->
 
 <!-- hello world prototype -->
-	   <bean id="helloWorld" class="com.tutorialpoint.HelloWorld" scope = "prototype">
+	  <!--  <bean id="helloWorld" class="com.tutorialpoint.HelloWorld" scope = "prototype">
        <property name="message" value="Hello, The World is Mine prototype !"/>
-	  </bean>
+	  </bean> -->
 
+<!-- init and destroy  -->
+	<bean id ="helloWorld"
+	class="com.tutorialpoint.HelloWorld" init-method="init" destroy-method="destroy">
+	<property name="message" value="Hello World!" />
+	</bean>
 
 
 
